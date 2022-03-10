@@ -19,7 +19,7 @@ tasks.register('zip', Zip) {
     description 'Archives package'
     from '.'
     include('*', 'bin/**', 'data/**', 'node_modules/**', 'public/**', 'routes/**', 'views/**')
-    archiveName 'Reports.zip'
+    archiveName 'trainschedule.zip'
     destinationDir(file('dist'))
 }
 
