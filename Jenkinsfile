@@ -29,7 +29,7 @@ pipeline {
                                         sourceFiles: 'dist/trainschedule.zip',
                                         removePrefix: 'dist/',
                                         remoteDirectory: '/tmp',
-                                        execCommand: 'unzip /tmp/trainschedule.zip -d ~'
+                                        execCommand: 'rm -rf ~/* && unzip /tmp/trainschedule.zip -d ~ && rm -rf /tmp/trainschedule.zip'
                                     )
                                 ]
                             )
@@ -61,7 +61,7 @@ pipeline {
                                         sourceFiles: 'dist/trainschedule.zip',
                                         removePrefix: 'dist/',
                                         remoteDirectory: '/tmp',
-                                        execCommand: 'unzip /tmp/trainschedule.zip -d ~'
+                                        execCommand: 'rm -rf ~/* && unzip /tmp/trainschedule.zip -d ~ && rm -rf /tmp/trainschedule.zip'
                                     )
                                 ]
                             )
